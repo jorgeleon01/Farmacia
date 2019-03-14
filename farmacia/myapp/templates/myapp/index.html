@@ -1,0 +1,6 @@
+    {% for producto in productos %}
+        <li>
+            {{ producto.nombre }}
+            <img src='{{ producto.imagen.url }}'/>
+        </li>
+    {% endfor %}
