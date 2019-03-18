@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmacia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <style type="text/css">
+        .borde{
+            background-color:gray;
+            height:200px;
+        }
+        .borde1{
+        	text-align:center;
+            background-color:aquamarine;
+            height:50px;
+        }
+        .borde2{
+            background-color:olivedrab;
+            text-align:center;
+            height:50px;
+        }
+        .borde3{
+            background-color:gray;
+            height:50px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<!-- ################################  Empieza codigo  ######################## -->
+
+
+
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 borde1"> 
+            <h1>PRODUCTOS</h1> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 borde1"> 
+            <h1>NOMBRE</h1> 
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 borde2"> 
+            <h1>PRECIO</h1> 
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 borde3"> 
+            <h1>IMAGEN</h1> 
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- ################################  Termina codigo  ######################## -->
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>Productos</title>
+
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                list-style:none;
+            }
+
+            header{
+                position:relative;
+                margin:auto;
+                width:1500px;
+                height:50px;
+                background:#0033ff;
+            }
+            
+            #titulo h2{
+                text-align:left;
+            }
+
+            #producto{
+                position:relative;
+                margin:auto;
+                width:1500px;
+                height:500px;
+                background: #0099ff;
+            }
+
+            #productos{
+                position:relative;
+                margin:auto;
+                width:500px;
+                height:300px;
+                background:red;
+            }
+
+            body{
+                background: #66ffff;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div id="titulo">
+                <h2>Productos</h2>
+            </div>
+        </header>
+
+        <div id="producto">
+            <ol>
+                {% for producto in productos %}
+                        <li>
+                            <h3>
+                                Producto: {{ producto.nombre }}
+                                <br>
+                                Precio: {{ producto.precio }}
+                                <br>
+                            </h3>
+                            <img src='{{ producto.imagen.url }}' height="200" width="200">
+                        </li>
+                {% endfor %}
+            </ol>
+            <footer>Fin</footer>
+        </div>
+    </body>
+
+</html>
+-->
